@@ -96,7 +96,7 @@ function runCommand(input, setLines, t, setLang) {
     case "kairat":
     case "кайрат":
     case "кайрат нуртас":
-      push([{ kind: "out acc", t: "♪ жүктелуде... / загружается..." }]);
+      push([{ kind: "out acc", t: "♪ loading..." }]);
       setTimeout(() => window.triggerNurtas && window.triggerNurtas(), 600);
       break;
     default:
