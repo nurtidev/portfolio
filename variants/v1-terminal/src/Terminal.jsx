@@ -92,6 +92,12 @@ function runCommand(input, setLines, t, setLang) {
     case "sudo rm -rf /":
       push([{ kind: "out", t: "nice try 🙂" }]);
       break;
+    case "nurtas":
+    case "кайрат":
+    case "кайрат нуртас":
+      push([{ kind: "out acc", t: "♪ жүктелуде... / загружается..." }]);
+      setTimeout(() => window.triggerNurtas && window.triggerNurtas(), 600);
+      break;
     default:
       push([{ kind: "out dim", t: `command not found: ${cmd} — try 'help'` }]);
   }
