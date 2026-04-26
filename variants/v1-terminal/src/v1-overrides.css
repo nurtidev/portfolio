@@ -1,0 +1,93 @@
+/* v1 Terminal-first — improvements over the base */
+
+/* Bigger, better hero hierarchy: name + role */
+.hero h1 {
+  font-size: clamp(48px, 6.4vw, 86px);
+  line-height: 0.98;
+  margin: 0 0 8px;
+}
+.hero h1 .name {
+  display: block;
+  color: var(--fg);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+.hero h1 .role-line {
+  display: block;
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--fg-dim);
+  margin-top: 14px;
+  font-family: var(--mono);
+}
+.hero h1 .role-line .accent-text {
+  color: var(--accent);
+}
+.hero h1 .accent::after { content: none; }
+
+/* Section rhythm — alternate elevated bg on Projects + Architecture */
+#projects, #architecture {
+  background: var(--bg-soft);
+  margin: 60px 0;
+  padding: 100px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+/* HSE featured project — visually distinct */
+.project.featured {
+  background:
+    radial-gradient(120% 80% at 100% 0%, var(--accent-soft) 0%, transparent 60%),
+    var(--bg-elev);
+  border-color: var(--accent);
+  position: relative;
+  padding: 36px;
+}
+.project.featured::after {
+  content: "★ FEATURED";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--accent);
+  color: #0a0a0a;
+  padding: 4px 10px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+.project.featured .project-name {
+  font-size: 32px;
+  letter-spacing: -0.025em;
+}
+.project.featured .project-metrics {
+  border-top-color: var(--accent);
+}
+
+/* Make terminal a bit larger and more central */
+.terminal { min-height: 440px; }
+.term-body { max-height: 380px; padding: 20px 22px; font-size: 13.5px; }
+
+/* Mobile nav: show inline collapsed */
+@media (max-width: 720px) {
+  .nav-tools .tool-btn:nth-child(1) { padding: 0 8px; }
+}
+
+/* Better separation: education its own visible boundary */
+.edu {
+  margin-top: 96px;
+  padding-top: 32px;
+  border-top: 1px dashed var(--line-strong);
+}
+
+/* About highlights: shrink to avoid overlap with project metrics */
+.about-body .hl-row {
+  padding: 14px 0;
+}
+.about-body .hl-row .v {
+  font-size: 13px;
+}
+
+/* Tweak nav brand for v1 */
+.brand-role { color: var(--accent); }
