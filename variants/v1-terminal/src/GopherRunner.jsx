@@ -10,7 +10,7 @@ const JUMP_V = -16.5;
 const SPEED_START = 5;
 const SPEED_MAX = 14;
 const SPEED_RAMP_PER_TICK = 0.0009;
-const GOPHER_SCALE = 2;
+const GOPHER_SCALE = 3;
 const GOPHER_W = 32 * GOPHER_SCALE;
 const GOPHER_H = 32 * GOPHER_SCALE;
 
@@ -356,8 +356,8 @@ function GopherRunner({ t }) {
         frameKey = runFrames[Math.floor(frameCount / speedFactor) % runFrames.length];
       }
       const frame = window.GOPHER_FRAMES[frameKey];
-      // anchor feet at GROUND_Y. Sprite is 32 rows × scale.
-      const drawY = GROUND_Y - frame.length * GOPHER_SCALE;
+      // Keep the drawn sprite anchored to the same feet position as the hitbox.
+      const drawY = g.y + g.h - frame.length * GOPHER_SCALE;
       drawSprite(ctx, frame, g.x, drawY, GOPHER_SCALE);
 
       s.obstacles.forEach((o) => drawObstacle(ctx, o));
@@ -449,7 +449,7 @@ function GopherRunner({ t }) {
         tabIndex={0}
         role="button"
         onClick={() => jump()}
-        onTouchStart={(e) => { e.preventDefault(); jump(); }}
+        onTouchStart={() => { jump(); }}
       >
         <canvas
           ref={canvasRef}
