@@ -93,6 +93,7 @@ function runCommand(input, setLines, t, setLang) {
       push([{ kind: "out", t: "nice try 🙂" }]);
       break;
     case "nurtas":
+    case "kairat":
     case "кайрат":
     case "кайрат нуртас":
       push([{ kind: "out acc", t: "♪ жүктелуде... / загружается..." }]);
