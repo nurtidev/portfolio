@@ -2,6 +2,7 @@
 // Every visible string lives here so the language toggle is a single source-of-truth swap.
 window.I18N = {
   ru: {
+    resumeHref: "assets/resume-ru.pdf",
     nav: {
       about: "01 / профиль",
       experience: "02 / опыт",
@@ -212,6 +213,7 @@ window.I18N = {
     },
   },
   en: {
+    resumeHref: "assets/resume-en.pdf",
     nav: {
       about: "01 / profile",
       experience: "02 / experience",

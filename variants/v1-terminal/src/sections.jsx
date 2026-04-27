@@ -1,6 +1,7 @@
 // Sections: hero, about, experience, projects, stack, edu, contact
 function Hero({ t, setLang }) {
   const headline = t.hero.role;
+  const resumeHref = t.resumeHref || "assets/resume.pdf";
   return (
     <section className="hero" id="top">
       <div className="shell">
@@ -27,7 +28,7 @@ function Hero({ t, setLang }) {
                 {t.hero.ctaPrimary}
                 <span className="arrow">→</span>
               </a>
-              <a className="btn" href="assets/resume.pdf" target="_blank" rel="noreferrer">
+              <a className="btn" href={resumeHref} target="_blank" rel="noreferrer">
                 {t.hero.ctaSecondary}
                 <span className="arrow">↓</span>
               </a>
@@ -220,6 +221,7 @@ function Stack({ t }) {
 }
 
 function Contact({ t }) {
+  const resumeHref = t.resumeHref || "assets/resume.pdf";
   return (
     <section className="section" id="contact">
       <div className="shell">
@@ -231,7 +233,7 @@ function Contact({ t }) {
           <div>
             <h3 className="contact-title">{t.contact.title}</h3>
             <p className="contact-body">{t.contact.body}</p>
-            <a className="btn btn-primary" href="assets/resume.pdf" target="_blank" rel="noreferrer">
+            <a className="btn btn-primary" href={resumeHref} target="_blank" rel="noreferrer">
               {t.contact.resume}
               <span className="arrow">↓</span>
             </a>
