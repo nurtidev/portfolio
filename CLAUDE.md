@@ -12,7 +12,7 @@ open Portfolio.html
 npx serve .
 ```
 
-`Portfolio.html` is the live entry point — it loads scripts from `variants/v1-terminal/src/`.
+`Portfolio.html` and `index.html` are identical — both serve as the live entry point and load scripts from `variants/v1-terminal/src/`. The site is deployed via GitHub Pages (see `CNAME`).
 
 ## Architecture
 
@@ -21,8 +21,9 @@ npx serve .
 **Script load order matters** (enforced by HTML `<script>` tag order):
 1. `i18n.js` — sets `window.I18N` (all bilingual strings)
 2. `stack-data.js` — sets `window.STACK_DATA` (proficiency data for StackSection)
-3. `gopher-sprites.js`, `leaderboard.js` — game data globals
-4. JSX components (`Terminal`, `ArchGraph`, `StackSection`, `GopherRunner`, `sections`, `app`) — each exports to `window.*`
+3. JSX components: `Terminal`, `ArchGraph`, `sections`, `StackSection`
+4. `gopher-sprites.js` — game sprite data global (must precede GopherRunner)
+5. `GopherRunner.jsx`, `app.jsx`
 
 **State** lives entirely in `app.jsx`: `lang` (ru/en) and `theme` (dark/light) are the only two pieces of app state, persisted to `localStorage`.
 
@@ -48,7 +49,18 @@ Script/style tags in `Portfolio.html` use `?v=N` query strings (e.g. `src/i18n.j
 
 ## Content updates
 
-- **All text:** edit `variants/v1-terminal/src/i18n.js` (and the corresponding `src/i18n.js` in `src/` if keeping both in sync)
+- **All text:** edit `variants/v1-terminal/src/i18n.js` — the root `src/i18n.js` is a diverged older copy; do not edit it
 - **Stack proficiency:** edit `variants/v1-terminal/src/stack-data.js`
 - **Terminal commands:** edit the `runCommand` switch in `variants/v1-terminal/src/Terminal.jsx`
 - **Resume PDF:** replace `assets/resume.pdf`
+
+## Other files
+
+- `design-canvas.jsx` — standalone Figma-like design preview tool; not loaded by the live site
+- Root `src/` — older diverged copy of v1-terminal sources; all active edits go to `variants/v1-terminal/src/`
+
+## Easter eggs
+
+- Terminal commands `kairat` / `nurtas` trigger a YouTube overlay (Кайрат Нуртас)
+- Konami code (↑↑↓↓←→←→BA) on any page triggers the same overlay
+- Video ID is set via `NURTAS_VIDEO_ID` in `Portfolio.html`
