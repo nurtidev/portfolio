@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Асанхан Нуртилек — резюме</title>
+<link rel="stylesheet" href="resume.css" />
+</head>
+<body>
+
+<div class="name">Асанхан Нуртилек</div>
+<div class="headline">Senior Backend Engineer &nbsp;·&nbsp; Go &nbsp;·&nbsp; Финтех, GovTech и высоконагруженные системы</div>
+<div class="contacts">
+  <span>nurtilek.assankhan@gmail.com</span><span>+7 (777) 561-8308</span><span>t.me/nurtilek_assankhan</span><span>github.com/nurtidev</span><span>Астана, Казахстан</span>
+</div>
+<div class="rule-thick"></div>
+
+<div class="section">
+  <div class="section-title">О себе</div>
+  <div class="rule-soft"></div>
+  <p class="summary">Backend-разработчик с 5 годами опыта создания высоконагруженных микросервисов на Go в финтехе, госсекторе, smart-city и крипто-трейдинге. Ключевые результаты: снижение задержки запросов в 3.75×, рост пропускной способности аналитики в 4–5×, сокращение дублирующихся транзакций на 35%. Победитель Astana Hub Demo Day 2026 (HSE AI Dashboard для КМГ-Кумколь, R²=0.796, ~197 млн тенге/год экономии).</p>
+</div>
+
+<div class="section">
+  <div class="section-title">Опыт работы</div>
+  <div class="rule-soft"></div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="job-company">АО «Аграрная кредитная корпорация»</span>
+      <span class="job-when">Май 2026 – наст. время &nbsp;·&nbsp; Астана</span>
+    </div>
+    <div class="job-role">Senior Golang Developer &nbsp;·&nbsp; Финтех / GovTech · Кредитование</div>
+    <ul>
+      <li>Проектирую backend кредитной платформы на Go: Clean Architecture и DDD, изолированные модули с ACL-контрактами между собой.</li>
+      <li>Перевёл долгоживущие бизнес-процессы на Temporal: детерминированные воркфлоу с версионированием — деплой не ломает заявки в полёте.</li>
+      <li>Интеграции с государственными реестрами и кредитным бюро через интеграционную шину: идемпотентность, таймауты, устойчивость к отказам внешних каналов.</li>
+      <li>Kafka + transactional outbox для событий между модулями; PostgreSQL со схемным разделением; выкатка в Kubernetes по GitOps (ArgoCD).</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="job-company">eMoney.ge</span>
+      <span class="job-when">Июль 2024 – Март 2026 &nbsp;·&nbsp; Remote</span>
+    </div>
+    <div class="job-role">Senior Golang Backend Developer &nbsp;·&nbsp; Финтех / Цифровые платежи</div>
+    <ul>
+      <li>Спроектировал идемпотентные RESTful API платёжных операций на Go, сократив дублирующиеся транзакции на ~35% через retry-логику и дедупликацию запросов.</li>
+      <li>Оптимизировал MySQL-запросы и схему миграций, снизив время отклика критичных эндпоинтов с ~450 мс до ~120 мс (улучшение в 3.75×).</li>
+      <li>Интегрировал асинхронные Kafka-пайплайны для реконсиляции с внешними провайдерами, устранив синхронное связывание сервисов.</li>
+      <li>Выстроил стек наблюдаемости на Prometheus + Grafana; поддерживал SLA платёжных сервисов в режиме on-call.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="job-company">Sergek Technologies</span>
+      <span class="job-when">Ноябрь 2023 – Июль 2024 &nbsp;·&nbsp; Астана</span>
+    </div>
+    <div class="job-role">Golang Developer &nbsp;·&nbsp; Smart City / Мониторинг трафика</div>
+    <ul>
+      <li>Разработал платформу мониторинга городского трафика с нагрузкой 200K+ событий/сутки и REST API для интеграции с городскими сервисами.</li>
+      <li>Мигрировал аналитику с PostgreSQL на ClickHouse — скорость агрегационных запросов выросла в 4–5×.</li>
+      <li>Реализовал антифрод-модуль на gRPC с Vue.js-панелью администратора; рефакторинг слоя очередей снизил среднее время отклика на ~40%.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="job-company">Astana IT University</span>
+      <span class="job-when">Сент. 2023 – Нояб. 2025 &nbsp;·&nbsp; Частичная занятость</span>
+    </div>
+    <div class="job-role">Инженер-разработчик &nbsp;·&nbsp; IoT / Обнаружение аномалий</div>
+    <ul>
+      <li>Спроектировал backend системы раннего обнаружения аномалий на дамбах Казахстана: приём IoT-телеметрии, хранение и алертинг при MTTD &lt; 10 мин.</li>
+      <li>Обучил и развернул YOLO-пайплайн компьютерного зрения для распознавания объектов на спутниковых снимках, сократив ручную верификацию на 60%.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="job-company">Darwin Tech Labs</span>
+      <span class="job-when">Сентябрь 2021 – Октябрь 2023 &nbsp;·&nbsp; Remote</span>
+    </div>
+    <div class="job-role">Golang Developer &nbsp;·&nbsp; Крипто-трейдинговая платформа</div>
+    <ul>
+      <li>Разработал микросервисы исполнения ордеров, управления балансами и истории сделок для высокочастотной торговой платформы.</li>
+      <li>Интегрировал подписание транзакций и reconciliation криптокошельков; оптимизировал PostgreSQL через партиционирование и составные индексы для high-write таблиц.</li>
+      <li>Внедрил Kafka для кросс-сервисной синхронизации; достиг покрытия 80%+ тестами (testify) и настроил тест-гейты в GitLab CI/CD.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="cols">
+  <div class="section">
+    <div class="section-title">Образование</div>
+    <div class="rule-soft"></div>
+    <div class="edu-item">
+      <div class="edu-deg">Магистр, Информационная безопасность</div>
+      <div class="edu-where">ЕНУ им. Л.Н. Гумилёва, Астана · 2026</div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-deg">Бакалавр, Вычислительная техника и ПО</div>
+      <div class="edu-where">ЕНУ им. Л.Н. Гумилёва, Астана · 2022</div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-deg">Software Developer</div>
+      <div class="edu-where">Alem School · 2022</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Технические навыки</div>
+    <div class="rule-soft"></div>
+    <dl class="skills">
+      <dt>Языки</dt><dd>Go, Python, SQL</dd>
+      <dt>Базы данных</dt><dd>PostgreSQL, MySQL, ClickHouse, Redis</dd>
+      <dt>Очереди и процессы</dt><dd>Apache Kafka, RabbitMQ, Temporal</dd>
+      <dt>API</dt><dd>REST, gRPC</dd>
+      <dt>Инфраструктура</dt><dd>Docker, Kubernetes, GitLab CI/CD, ArgoCD</dd>
+      <dt>Мониторинг</dt><dd>Prometheus, Grafana, Zap</dd>
+      <dt>Владение языками</dt><dd>Русский C2, Английский B2, Казахский — родной</dd>
+    </dl>
+  </div>
+</div>
+
+</body>
+</html>

@@ -7,7 +7,7 @@ const TERM_HISTORY_INITIAL = [
   { kind: "cmd", t: "whoami" },
   { kind: "out", t: "asankhan_n — backend engineer · senior golang · astana" },
   { kind: "cmd", t: "uptime" },
-  { kind: "out", t: "4y 7m of commercial experience · open to opportunities" },
+  { kind: "out", t: "4y 11m of commercial experience · open to opportunities" },
 ];
 
 function runCommand(input, setLines, t, setLang) {
@@ -23,7 +23,7 @@ function runCommand(input, setLines, t, setLang) {
       ]);
       break;
     case "whoami":
-      push([{ kind: "out", t: "asankhan nurtilek · senior golang developer · 25 · astana, kz" }]);
+      push([{ kind: "out", t: "asankhan nurtilek · senior golang developer · 26 · astana, kz" }]);
       break;
     case "skills":
       push([
@@ -34,10 +34,11 @@ function runCommand(input, setLines, t, setLang) {
     case "projects":
       push([
         { kind: "out", t: "1. hse forecasting platform — astana hub demo day '26 winner" },
-        { kind: "out", t: "2. emoney payments core — fintech backend, kafka, mysql tuning" },
-        { kind: "out", t: "3. sergek traffic analytics — clickhouse migration, antifraud" },
-        { kind: "out", t: "4. dam anomaly detection — yolo + iot, mttd < 10 min" },
-        { kind: "out", t: "5. darwin trading engine — microservice trading, crypto wallets" },
+        { kind: "out", t: "2. lending platform — go + temporal, state registry integrations" },
+        { kind: "out", t: "3. emoney payments core — fintech backend, kafka, mysql tuning" },
+        { kind: "out", t: "4. sergek traffic analytics — clickhouse migration, antifraud" },
+        { kind: "out", t: "5. dam anomaly detection — yolo + iot, mttd < 10 min" },
+        { kind: "out", t: "6. darwin trading engine — microservice trading, crypto wallets" },
       ]);
       break;
     case "stack":
@@ -45,8 +46,8 @@ function runCommand(input, setLines, t, setLang) {
         { kind: "out dim", t: "// proficiency: ●●●●● expert  ●●●●○ strong  ●●●○○ working" },
         { kind: "out", t: "languages.....: go ●●●●●  python ●●●○○  sql ●●●●●  js ●●●○○" },
         { kind: "out", t: "databases.....: postgresql ●●●●●  mysql ●●●●○  clickhouse ●●●●○  redis ●●●●○" },
-        { kind: "out", t: "messaging.....: kafka ●●●●○  rabbitmq ●●●○○  grpc ●●●●●  rest ●●●●●" },
-        { kind: "out", t: "platform......: docker ●●●●●  k8s ●●●○○  gitlab ci ●●●●○  linux ●●●●○" },
+        { kind: "out", t: "messaging.....: kafka ●●●●○  grpc ●●●●●  rest ●●●●●  temporal ●●●●○" },
+        { kind: "out", t: "platform......: docker ●●●●●  k8s ●●●●○  gitlab ci ●●●●○  linux ●●●●○" },
         { kind: "out", t: "observability.: prometheus ●●●●○  grafana ●●●●○  zap ●●●●○  otel ●●●○○" },
         { kind: "out", t: "ai / cv.......: yolo ●●●○○  cursor ●●●●○  claude code ●●●●○" },
         { kind: "out acc", t: "→ scroll to #stack for full breakdown with descriptions" },

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Nurtilek Assankhan — Resume</title>
+<link rel="stylesheet" href="resume.css" />
+<style>
+  /* The English copy is shorter than the Russian one — run it slightly larger
+     so the page fills out instead of ending mid-sheet. Still one page. */
+  :root { --fs-base: 9.7pt; --lh: 1.29; }
+  /* English skill labels are wider ("Messaging & workflows") — give the value column more room. */
+  .cols { grid-template-columns: 0.8fr 1.2fr; }
+</style>
+</head>
+<body>
+
+<div class="name">Nurtilek Assankhan</div>
+<div class="headline">Senior Backend Engineer &nbsp;·&nbsp; Go &nbsp;·&nbsp; Fintech, GovTech &amp; High-Load Systems</div>
+<div class="contacts">
+  <span>nurtilek.assankhan@gmail.com</span><span>+7 (777) 561-8308</span><span>t.me/nurtilek_assankhan</span><span>github.com/nurtidev</span><span>Astana, Kazakhstan</span>
+</div>
+<div class="rule-thick"></div>
+
+<div class="section">
+  <div class="section-title">Summary</div>
+  <div class="rule-soft"></div>
+  <p class="summary">Backend engineer with 5 years building high-load microservices in Go across fintech, the public sector, smart-city, and crypto-trading. Key results: 3.75× latency reduction, 4–5× analytics throughput gain, 35% duplicate transaction elimination. Winner, Astana Hub Demo Day 2026 (HSE AI Dashboard for KMG-Kumkol, R²=0.796, ~197M KZT/year projected savings).</p>
+</div>
+
+<div class="section">
+  <div class="section-title">Experience</div>
+  <div class="rule-soft"></div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="job-company">Agrarian Credit Corporation</span>
+      <span class="job-when">May 2026 – Present &nbsp;·&nbsp; Astana</span>
+    </div>
+    <div class="job-role">Senior Golang Developer &nbsp;·&nbsp; Fintech / GovTech · Lending</div>
+    <ul>
+      <li>Building the Go backend of a lending platform: Clean Architecture and DDD, isolated modules communicating through ACL contracts.</li>
+      <li>Moved long-running business processes onto Temporal: deterministic, versioned workflows so deploys never break in-flight applications.</li>
+      <li>Integrations with state registries and the credit bureau over an integration bus: idempotency, timeouts, resilience to upstream failures.</li>
+      <li>Kafka + transactional outbox for cross-module events; PostgreSQL with schema separation; Kubernetes delivery via GitOps (ArgoCD).</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="job-company">eMoney.ge</span>
+      <span class="job-when">Jul 2024 – Mar 2026 &nbsp;·&nbsp; Remote</span>
+    </div>
+    <div class="job-role">Senior Golang Backend Developer &nbsp;·&nbsp; Fintech / Digital Payments</div>
+    <ul>
+      <li>Designed idempotent RESTful payment APIs in Go, reducing duplicate transactions by ~35% through retry logic and request deduplication.</li>
+      <li>Optimized MySQL queries and migration schemas, cutting critical endpoint response time from ~450 ms to ~120 ms (3.75× improvement).</li>
+      <li>Integrated async Kafka pipelines for external provider reconciliation, improving fault tolerance and eliminating synchronous coupling.</li>
+      <li>Built Prometheus + Grafana observability stack; maintained production SLA on-call for payment-critical services.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="job-company">Sergek Technologies</span>
+      <span class="job-when">Nov 2023 – Jul 2024 &nbsp;·&nbsp; Astana</span>
+    </div>
+    <div class="job-role">Golang Developer &nbsp;·&nbsp; Smart City / Traffic Monitoring</div>
+    <ul>
+      <li>Built a city traffic monitoring platform processing 200K+ events/day; designed the REST API layer consumed by municipal services.</li>
+      <li>Migrated event analytics from PostgreSQL to ClickHouse, achieving 4–5× query speed improvement for aggregation workloads.</li>
+      <li>Implemented a gRPC anti-fraud module with a Vue.js admin panel; refactored the messaging layer, reducing avg response time by ~40%.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="job-company">Astana IT University</span>
+      <span class="job-when">Sep 2023 – Nov 2025 &nbsp;·&nbsp; Part-time</span>
+    </div>
+    <div class="job-role">R&amp;D Engineer &nbsp;·&nbsp; IoT / Anomaly Detection</div>
+    <ul>
+      <li>Architected a real-time anomaly detection backend for Kazakhstan dam infrastructure: IoT telemetry ingestion, storage, and alerting at MTTD &lt; 10 min.</li>
+      <li>Trained and deployed a YOLO-based CV pipeline for satellite imagery object recognition, reducing manual verification time by 60%.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="job-company">Darwin Tech Labs</span>
+      <span class="job-when">Sep 2021 – Oct 2023 &nbsp;·&nbsp; Remote</span>
+    </div>
+    <div class="job-role">Golang Developer &nbsp;·&nbsp; Crypto Trading Platform</div>
+    <ul>
+      <li>Developed order execution, balance management, and trade history microservices for a high-frequency crypto trading platform.</li>
+      <li>Integrated crypto wallet transaction signing and reconciliation; optimized PostgreSQL with partitioning and compound indexing for high-write tables.</li>
+      <li>Introduced Kafka for cross-service event streaming; achieved 80%+ test coverage (testify) and configured GitLab CI/CD test gates.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="cols">
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="rule-soft"></div>
+    <div class="edu-item">
+      <div class="edu-deg">M.S. Information Security</div>
+      <div class="edu-where">L.N. Gumilyov ENU, Astana · 2026</div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-deg">B.S. Computer Science &amp; Software Engineering</div>
+      <div class="edu-where">L.N. Gumilyov ENU, Astana · 2022</div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-deg">Software Developer Certificate</div>
+      <div class="edu-where">Alem School · 2022</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Technical skills</div>
+    <div class="rule-soft"></div>
+    <dl class="skills">
+      <dt>Languages</dt><dd>Go, Python, SQL</dd>
+      <dt>Databases</dt><dd>PostgreSQL, MySQL, ClickHouse, Redis</dd>
+      <dt>Messaging &amp; workflows</dt><dd>Apache Kafka, RabbitMQ, Temporal</dd>
+      <dt>APIs</dt><dd>REST, gRPC</dd>
+      <dt>Infrastructure</dt><dd>Docker, Kubernetes, GitLab CI/CD, ArgoCD</dd>
+      <dt>Observability</dt><dd>Prometheus, Grafana, Zap</dd>
+      <dt>Spoken</dt><dd>Russian C2, English B2, Kazakh native</dd>
+    </dl>
+  </div>
+</div>
+
+</body>
+</html>

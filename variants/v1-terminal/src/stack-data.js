@@ -4,15 +4,15 @@ window.STACK_DATA = {
   ru: {
     coreTitle: "Основной стек",
     coreSubtitle: "С чем работаю каждый день в продакшне",
-    coreNote: "// 4+ лет коммерческого опыта",
+    coreNote: "// 5 лет коммерческого опыта",
     levelLabels: { 5: "expert", 4: "strong", 3: "working", 2: "familiar" },
     yearsLabel: "лет",
     core: [
-      { name: "Go (Golang)", years: 4, level: 5, note: "основной язык, идиоматичный код, generics, profiling" },
-      { name: "PostgreSQL", years: 4, level: 5, note: "индексы, партиционирование, EXPLAIN, миграции" },
-      { name: "Apache Kafka", years: 3, level: 4, note: "консьюмеры, idempotent producer, partitioning" },
-      { name: "Docker / K8s", years: 4, level: 4, note: "compose, helm, deployment стратегии" },
-      { name: "gRPC + REST", years: 4, level: 5, note: "protobuf, streaming, идемпотентность" },
+      { name: "Go (Golang)", years: 5, level: 5, note: "основной язык, идиоматичный код, generics, profiling" },
+      { name: "PostgreSQL", years: 5, level: 5, note: "индексы, партиционирование, EXPLAIN, миграции" },
+      { name: "Apache Kafka", years: 4, level: 4, note: "консьюмеры, idempotent producer, partitioning" },
+      { name: "Docker / K8s", years: 5, level: 4, note: "compose, helm, deployment стратегии" },
+      { name: "gRPC + REST", years: 5, level: 5, note: "protobuf, streaming, идемпотентность" },
     ],
     groups: [
       {
@@ -21,7 +21,7 @@ window.STACK_DATA = {
         kicker: "languages",
         desc: "Go — основной. Python для CV/скриптов. SQL — везде, где данные.",
         items: [
-          { n: "Go", lvl: 5, role: "primary", years: 4 },
+          { n: "Go", lvl: 5, role: "primary", years: 5 },
           { n: "Python", lvl: 3, role: "data / cv", years: 3 },
           { n: "SQL", lvl: 5, role: "queries / migrations", years: 5 },
           { n: "JavaScript", lvl: 3, role: "admin UIs", years: 2 },
@@ -34,7 +34,7 @@ window.STACK_DATA = {
         kicker: "data layer",
         desc: "Хранилище под нагрузку. PostgreSQL для OLTP, ClickHouse для аналитики, Redis для кэша и locks.",
         items: [
-          { n: "PostgreSQL", lvl: 5, role: "primary OLTP", years: 4 },
+          { n: "PostgreSQL", lvl: 5, role: "primary OLTP", years: 5 },
           { n: "MySQL", lvl: 4, role: "fintech tx tables", years: 2 },
           { n: "ClickHouse", lvl: 4, role: "OLAP / events", years: 1 },
           { n: "Redis", lvl: 4, role: "cache / locks / queues" },
@@ -47,10 +47,11 @@ window.STACK_DATA = {
         kicker: "messaging",
         desc: "Асинхронные интеграции, event-driven архитектура, межсервисные коммуникации.",
         items: [
-          { n: "Apache Kafka", lvl: 4, role: "event bus", years: 3 },
+          { n: "Apache Kafka", lvl: 4, role: "event bus", years: 4 },
           { n: "RabbitMQ", lvl: 3, role: "task queues" },
-          { n: "gRPC", lvl: 5, role: "inter-service RPC", years: 4 },
+          { n: "gRPC", lvl: 5, role: "inter-service RPC", years: 5 },
           { n: "REST / HTTP", lvl: 5, role: "external APIs", years: 5 },
+          { n: "Temporal", lvl: 4, role: "durable workflows" },
         ],
       },
       {
@@ -59,8 +60,8 @@ window.STACK_DATA = {
         kicker: "platform",
         desc: "CI/CD, контейнеризация, оркестрация. Самостоятельно поднимаю окружения и пайплайны.",
         items: [
-          { n: "Docker", lvl: 5, role: "containers", years: 4 },
-          { n: "Kubernetes", lvl: 3, role: "deployments / services" },
+          { n: "Docker", lvl: 5, role: "containers", years: 5 },
+          { n: "Kubernetes", lvl: 4, role: "deployments / GitOps" },
           { n: "GitLab CI/CD", lvl: 4, role: "pipelines / auto-deploy" },
           { n: "Linux", lvl: 4, role: "ops / debugging" },
           { n: "Git", lvl: 5, role: "vcs" },
@@ -96,15 +97,15 @@ window.STACK_DATA = {
   en: {
     coreTitle: "Core stack",
     coreSubtitle: "What I work with every day in production",
-    coreNote: "// 4+ years of commercial experience",
+    coreNote: "// 5 years of commercial experience",
     levelLabels: { 5: "expert", 4: "strong", 3: "working", 2: "familiar" },
     yearsLabel: "yrs",
     core: [
-      { name: "Go (Golang)", years: 4, level: 5, note: "primary language, idiomatic code, generics, profiling" },
-      { name: "PostgreSQL", years: 4, level: 5, note: "indexes, partitioning, EXPLAIN, migrations" },
-      { name: "Apache Kafka", years: 3, level: 4, note: "consumers, idempotent producer, partitioning" },
-      { name: "Docker / K8s", years: 4, level: 4, note: "compose, helm, deployment strategies" },
-      { name: "gRPC + REST", years: 4, level: 5, note: "protobuf, streaming, idempotency" },
+      { name: "Go (Golang)", years: 5, level: 5, note: "primary language, idiomatic code, generics, profiling" },
+      { name: "PostgreSQL", years: 5, level: 5, note: "indexes, partitioning, EXPLAIN, migrations" },
+      { name: "Apache Kafka", years: 4, level: 4, note: "consumers, idempotent producer, partitioning" },
+      { name: "Docker / K8s", years: 5, level: 4, note: "compose, helm, deployment strategies" },
+      { name: "gRPC + REST", years: 5, level: 5, note: "protobuf, streaming, idempotency" },
     ],
     groups: [
       {
@@ -113,7 +114,7 @@ window.STACK_DATA = {
         kicker: "languages",
         desc: "Go is primary. Python for CV/scripts. SQL anywhere data lives.",
         items: [
-          { n: "Go", lvl: 5, role: "primary", years: 4 },
+          { n: "Go", lvl: 5, role: "primary", years: 5 },
           { n: "Python", lvl: 3, role: "data / cv", years: 3 },
           { n: "SQL", lvl: 5, role: "queries / migrations", years: 5 },
           { n: "JavaScript", lvl: 3, role: "admin UIs", years: 2 },
@@ -126,7 +127,7 @@ window.STACK_DATA = {
         kicker: "data layer",
         desc: "Storage under load. PostgreSQL for OLTP, ClickHouse for analytics, Redis for cache and locks.",
         items: [
-          { n: "PostgreSQL", lvl: 5, role: "primary OLTP", years: 4 },
+          { n: "PostgreSQL", lvl: 5, role: "primary OLTP", years: 5 },
           { n: "MySQL", lvl: 4, role: "fintech tx tables", years: 2 },
           { n: "ClickHouse", lvl: 4, role: "OLAP / events", years: 1 },
           { n: "Redis", lvl: 4, role: "cache / locks / queues" },
@@ -139,10 +140,11 @@ window.STACK_DATA = {
         kicker: "messaging",
         desc: "Async integrations, event-driven architecture, inter-service comms.",
         items: [
-          { n: "Apache Kafka", lvl: 4, role: "event bus", years: 3 },
+          { n: "Apache Kafka", lvl: 4, role: "event bus", years: 4 },
           { n: "RabbitMQ", lvl: 3, role: "task queues" },
-          { n: "gRPC", lvl: 5, role: "inter-service RPC", years: 4 },
+          { n: "gRPC", lvl: 5, role: "inter-service RPC", years: 5 },
           { n: "REST / HTTP", lvl: 5, role: "external APIs", years: 5 },
+          { n: "Temporal", lvl: 4, role: "durable workflows" },
         ],
       },
       {
@@ -151,8 +153,8 @@ window.STACK_DATA = {
         kicker: "platform",
         desc: "CI/CD, containerization, orchestration. I bring up environments and pipelines myself.",
         items: [
-          { n: "Docker", lvl: 5, role: "containers", years: 4 },
-          { n: "Kubernetes", lvl: 3, role: "deployments / services" },
+          { n: "Docker", lvl: 5, role: "containers", years: 5 },
+          { n: "Kubernetes", lvl: 4, role: "deployments / GitOps" },
           { n: "GitLab CI/CD", lvl: 4, role: "pipelines / auto-deploy" },
           { n: "Linux", lvl: 4, role: "ops / debugging" },
           { n: "Git", lvl: 5, role: "vcs" },

@@ -15,7 +15,7 @@ window.I18N = {
       role: "Senior Golang Developer",
       tagline: "Проектирую высоконагруженные backend-системы.\nFinTech, IoT, Computer Vision.",
       location: "Астана, Казахстан",
-      yoe: "4+ года коммерческого опыта",
+      yoe: "5 лет коммерческого опыта",
       ctaPrimary: "Связаться",
       ctaSecondary: "Скачать резюме (PDF)",
       terminalHint: "терминал — попробуй: help, whoami, skills, projects",
@@ -23,7 +23,7 @@ window.I18N = {
     about: {
       eyebrow: "ПРОФИЛЬ",
       title: "Backend-разработчик с фокусом на распределённые системы.",
-      body: "Специализируюсь на проектировании микросервисных платформ в финтехе и smart-city. Участвовал в системах, которые обрабатывают сотни миллионов событий в сутки. Имею опыт на стыке финтех, IoT и computer vision, с практическим применением AI-инструментов в ежедневной разработке.",
+      body: "Специализируюсь на проектировании микросервисных платформ в финтехе и smart-city. Участвовал в системах, которые обрабатывают сотни миллионов событий в сутки. Сейчас строю кредитную платформу в госсекторе: долгоживущие процессы, интеграции с государственными реестрами, требования регулятора. Имею опыт на стыке финтех, IoT и computer vision, с практическим применением AI-инструментов в ежедневной разработке.",
       highlights: [
         { k: "Astana Hub Demo Day '26", v: "победа с AI-платформой HSE-прогнозирования" },
         { k: "R² = 0.796", v: "точность модели на промышленных данных" },
@@ -40,14 +40,28 @@ window.I18N = {
       eyebrow: "ТРУДОВОЙ ПУТЬ",
       title: "Опыт",
       summary: {
-        total: "4+ года",
+        total: "5 лет",
         totalLabel: "общий стаж в коммерческой разработке",
-        companies: "4 компании",
+        companies: "5 компаний",
         companiesLabel: "FinTech · IoT · GovTech · R&D",
         since: "с 2021",
         sinceLabel: "пишу на Go в продакшне",
       },
       items: [
+        {
+          period: "май 2026 — н.в.",
+          duration: "3 мес",
+          company: "АО «Аграрная кредитная корпорация»",
+          role: "Senior Golang Developer",
+          sector: "FinTech / GovTech",
+          bullets: [
+            "Backend кредитной платформы на Go: Clean Architecture и DDD, изолированные модули с ACL-контрактами между собой.",
+            "Долгоживущие бизнес-процессы на Temporal — детерминированные воркфлоу с версионированием, чтобы деплой не ломал заявки в полёте.",
+            "Интеграции с государственными реестрами и кредитным бюро через интеграционную шину: идемпотентность, таймауты, устойчивость к сбоям внешних каналов.",
+            "Kafka + transactional outbox для событий между модулями; PostgreSQL со схемным разделением и версионируемыми миграциями.",
+            "Выкатка в Kubernetes по GitOps (ArgoCD); метрики бизнес-этапов в Prometheus.",
+          ],
+        },
         {
           period: "июль 2024 — март 2026",
           duration: "1 г 9 мес",
@@ -117,6 +131,18 @@ window.I18N = {
             { v: "1st", l: "Demo Day" },
           ],
           stack: ["Go", "Python", "PostgreSQL", "Docker"],
+        },
+        {
+          tag: "FinTech / GovTech",
+          name: "Кредитная платформа",
+          where: "АО «Аграрная кредитная корпорация»",
+          desc: "Конвейер кредитования: заявка → проверки и скоринг → выдача → сопровождение. Долгоживущие процессы на Temporal, интеграции с госреестрами через шину.",
+          metrics: [
+            { v: "Temporal", l: "оркестрация процессов" },
+            { v: "10+", l: "внешних интеграций" },
+            { v: "GitOps", l: "выкатка в K8s" },
+          ],
+          stack: ["Go", "Temporal", "PostgreSQL", "Kafka"],
         },
         {
           tag: "FinTech",
@@ -243,7 +269,7 @@ window.I18N = {
       role: "Senior Golang Developer",
       tagline: "I design high-load backend systems.\nFinTech, IoT, Computer Vision.",
       location: "Astana, Kazakhstan",
-      yoe: "4+ years of commercial experience",
+      yoe: "5 years of commercial experience",
       ctaPrimary: "Get in touch",
       ctaSecondary: "Download resume (PDF)",
       terminalHint: "terminal — try: help, whoami, skills, projects",
@@ -251,7 +277,7 @@ window.I18N = {
     about: {
       eyebrow: "PROFILE",
       title: "Backend engineer focused on distributed systems.",
-      body: "I design microservice platforms for fintech and smart-city domains and have shipped systems handling hundreds of millions of events per day. I work at the intersection of fintech, IoT and computer vision, and apply AI tooling daily in my engineering workflow.",
+      body: "I design microservice platforms for fintech and smart-city domains and have shipped systems handling hundreds of millions of events per day. Right now I'm building a lending platform in the public sector: long-running processes, state-registry integrations, and regulatory constraints. I work at the intersection of fintech, IoT and computer vision, and apply AI tooling daily in my engineering workflow.",
       highlights: [
         { k: "Astana Hub Demo Day '26", v: "1st place — AI HSE-forecasting platform" },
         { k: "R² = 0.796", v: "model accuracy on industrial data" },
@@ -268,14 +294,28 @@ window.I18N = {
       eyebrow: "TRAJECTORY",
       title: "Experience",
       summary: {
-        total: "4+ years",
+        total: "5 years",
         totalLabel: "of commercial backend development",
-        companies: "4 companies",
+        companies: "5 companies",
         companiesLabel: "FinTech · IoT · GovTech · R&D",
         since: "since 2021",
         sinceLabel: "shipping Go to production",
       },
       items: [
+        {
+          period: "May 2026 — present",
+          duration: "3m",
+          company: "Agrarian Credit Corporation",
+          role: "Senior Golang Developer",
+          sector: "FinTech / GovTech",
+          bullets: [
+            "Go backend for a lending platform: Clean Architecture and DDD, isolated modules talking to each other through ACL contracts.",
+            "Long-running business processes on Temporal — deterministic, versioned workflows so deploys never break in-flight applications.",
+            "Integrations with state registries and the credit bureau over an integration bus: idempotency, timeouts, resilience to upstream failures.",
+            "Kafka + transactional outbox for cross-module events; PostgreSQL with schema separation and versioned migrations.",
+            "Kubernetes delivery via GitOps (ArgoCD); business-stage metrics in Prometheus.",
+          ],
+        },
         {
           period: "Jul 2024 — Mar 2026",
           duration: "1y 9m",
@@ -345,6 +385,18 @@ window.I18N = {
             { v: "1st", l: "Demo Day" },
           ],
           stack: ["Go", "Python", "PostgreSQL", "Docker"],
+        },
+        {
+          tag: "FinTech / GovTech",
+          name: "Lending Platform",
+          where: "Agrarian Credit Corporation",
+          desc: "Lending pipeline: application → checks and scoring → disbursement → servicing. Long-running processes on Temporal, state-registry integrations over a bus.",
+          metrics: [
+            { v: "Temporal", l: "process orchestration" },
+            { v: "10+", l: "external integrations" },
+            { v: "GitOps", l: "K8s delivery" },
+          ],
+          stack: ["Go", "Temporal", "PostgreSQL", "Kafka"],
         },
         {
           tag: "FinTech",

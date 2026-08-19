@@ -52,10 +52,14 @@ Script/style tags in `Portfolio.html` use `?v=N` query strings (e.g. `src/i18n.j
 - **All text:** edit `variants/v1-terminal/src/i18n.js` — the root `src/i18n.js` is a diverged older copy; do not edit it
 - **Stack proficiency:** edit `variants/v1-terminal/src/stack-data.js`
 - **Terminal commands:** edit the `runCommand` switch in `variants/v1-terminal/src/Terminal.jsx`
-- **Resume PDF:** replace `assets/resume.pdf`
+- **Resume PDFs:** edit `resume/resume-ru.html` / `resume/resume-en.html` (shared print styles in
+  `resume/resume.css`), then run `resume/build.sh` — it renders both into `assets/resume-{ru,en}.pdf`
+  via headless Chrome and prints the page count. Keep each to one page. `assets/resume.pdf` is the
+  older hh.kz export, still linked from variants v2/v3
 
 ## Other files
 
+- `resume/` — HTML source of the downloadable resume; the PDFs in `assets/` are build artifacts
 - `design-canvas.jsx` — standalone Figma-like design preview tool; not loaded by the live site
 - Root `src/` — older diverged copy of v1-terminal sources; all active edits go to `variants/v1-terminal/src/`
 

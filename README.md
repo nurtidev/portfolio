@@ -14,7 +14,10 @@ Personal portfolio site for **Asankhan Nurtilek**, Senior Golang Developer from 
 .
 ├── Portfolio.html          # Main entry point
 ├── assets/
-│   └── resume.pdf
+│   ├── resume-ru.pdf       # built from resume/resume-ru.html
+│   ├── resume-en.pdf       # built from resume/resume-en.html
+│   └── resume.pdf          # older hh.kz export (used by v2 / v3)
+├── resume/                 # HTML source of the resume + build.sh
 ├── src/                    # Shared component sources
 │   ├── app.jsx             # App shell, Nav, Footer
 │   ├── sections.jsx        # Hero, About, Experience, Projects, Stack, Contact
@@ -27,6 +30,16 @@ Personal portfolio site for **Asankhan Nurtilek**, Senior Golang Developer from 
     ├── v2-editorial/       # Editorial / minimal design
     └── v3-systems/         # Systems / diagram-heavy design
 ```
+
+## Resume
+
+The downloadable PDFs are generated, not hand-edited:
+
+```bash
+./resume/build.sh          # resume/resume-{ru,en}.html → assets/resume-{ru,en}.pdf
+```
+
+Rendering goes through headless Chrome; each language must stay on a single A4 page.
 
 ## Running locally
 
