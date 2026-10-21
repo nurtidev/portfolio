@@ -23,7 +23,7 @@ window.I18N = {
     about: {
       eyebrow: "ПРОФИЛЬ",
       title: "Backend-разработчик с фокусом на распределённые системы.",
-      body: "Специализируюсь на проектировании микросервисных платформ в финтехе и smart-city. Участвовал в системах, которые обрабатывают сотни миллионов событий в сутки. Сейчас строю кредитную платформу в госсекторе и цифровой портал для заёмщиков: долгоживущие процессы, интеграции с государственными реестрами, требования регулятора, запуск и сопровождение в продакшне. Имею опыт на стыке финтех, IoT и computer vision, с практическим применением AI-инструментов в ежедневной разработке.",
+      body: "Специализируюсь на проектировании микросервисных платформ в финтехе и smart-city. Участвовал в системах, которые обрабатывают сотни миллионов событий в сутки. Сейчас строю кредитную платформу в госсекторе и цифровой портал для заёмщиков: долгоживущие процессы, интеграции с государственными реестрами, требования регулятора. Имею опыт на стыке финтех, IoT и computer vision, с практическим применением AI-инструментов в ежедневной разработке.",
       highlights: [
         { k: "Astana Hub Demo Day '26", v: "победа с AI-платформой HSE-прогнозирования" },
         { k: "R² = 0.796", v: "точность модели на промышленных данных" },
@@ -55,13 +55,10 @@ window.I18N = {
           role: "Senior Golang Developer",
           sector: "FinTech / GovTech",
           bullets: [
-            "Backend кредитной платформы на Go: Clean Architecture и DDD, изолированные модули с ACL-контрактами между собой.",
-            "Долгоживущие бизнес-процессы на Temporal — детерминированные воркфлоу с версионированием, чтобы деплой не ломал заявки в полёте.",
-            "Интеграции с государственными реестрами и кредитным бюро через интеграционную шину: идемпотентность, таймауты, устойчивость к сбоям внешних каналов.",
-            "Цифровой портал корпорации, основной разработчик: публичный сайт, личный кабинет заёмщика и админка на Next.js, бэкенд портала на Go. Заявки с сайта с защитой персональных данных, контент на трёх языках (RU/KK/EN).",
-            "Перенос старого корпоративного сайта на новый портал: контент, документы и архив публикаций.",
-            "Kafka + transactional outbox для событий между модулями; PostgreSQL со схемным разделением и версионируемыми миграциями.",
-            "Выкатка в Kubernetes по GitOps (ArgoCD); метрики бизнес-этапов в Prometheus. Платформа в продакшне с сентября 2026.",
+            "Backend кредитной платформы на Go: Clean Architecture и DDD, долгоживущие процессы на Temporal с версионированием воркфлоу.",
+            "Интеграции с государственными реестрами и кредитным бюро через шину: идемпотентность, таймауты, устойчивость к сбоям.",
+            "Цифровой портал: публичный сайт, личный кабинет заёмщика и админка на Next.js, бэкенд на Go; перенос старого корпоративного сайта.",
+            "Kafka + transactional outbox, PostgreSQL; выкатка в Kubernetes по GitOps (ArgoCD), в продакшне с сентября 2026.",
           ],
         },
         {
@@ -279,7 +276,7 @@ window.I18N = {
     about: {
       eyebrow: "PROFILE",
       title: "Backend engineer focused on distributed systems.",
-      body: "I design microservice platforms for fintech and smart-city domains and have shipped systems handling hundreds of millions of events per day. Right now I'm building a public-sector lending platform and its borrower-facing digital portal: long-running processes, state-registry integrations, regulatory constraints, and running it all in production. I work at the intersection of fintech, IoT and computer vision, and apply AI tooling daily in my engineering workflow.",
+      body: "I design microservice platforms for fintech and smart-city domains and have shipped systems handling hundreds of millions of events per day. Right now I'm building a public-sector lending platform and its borrower-facing digital portal: long-running processes, state-registry integrations, and regulatory constraints. I work at the intersection of fintech, IoT and computer vision, and apply AI tooling daily in my engineering workflow.",
       highlights: [
         { k: "Astana Hub Demo Day '26", v: "1st place — AI HSE-forecasting platform" },
         { k: "R² = 0.796", v: "model accuracy on industrial data" },
@@ -311,13 +308,10 @@ window.I18N = {
           role: "Senior Golang Developer",
           sector: "FinTech / GovTech",
           bullets: [
-            "Go backend for a lending platform: Clean Architecture and DDD, isolated modules talking to each other through ACL contracts.",
-            "Long-running business processes on Temporal — deterministic, versioned workflows so deploys never break in-flight applications.",
-            "Integrations with state registries and the credit bureau over an integration bus: idempotency, timeouts, resilience to upstream failures.",
-            "Lead developer of the corporation's digital portal: public website, borrower cabinet and admin panel in Next.js, portal backend in Go. Website applications with personal-data protection, content in three languages (RU/KK/EN).",
-            "Migrated the legacy corporate website to the new portal: content, documents and the publications archive.",
-            "Kafka + transactional outbox for cross-module events; PostgreSQL with schema separation and versioned migrations.",
-            "Kubernetes delivery via GitOps (ArgoCD); business-stage metrics in Prometheus. In production since September 2026.",
+            "Go backend for a lending platform: Clean Architecture and DDD, long-running processes on Temporal with versioned workflows.",
+            "Integrations with state registries and the credit bureau over a bus: idempotency, timeouts, resilience to upstream failures.",
+            "Digital portal: public website, borrower cabinet and admin panel in Next.js, Go backend; migrated the legacy corporate website.",
+            "Kafka + transactional outbox, PostgreSQL; Kubernetes delivery via GitOps (ArgoCD), in production since September 2026.",
           ],
         },
         {
