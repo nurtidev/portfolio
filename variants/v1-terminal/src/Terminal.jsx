@@ -7,7 +7,7 @@ const TERM_HISTORY_INITIAL = [
   { kind: "cmd", t: "whoami" },
   { kind: "out", t: "asankhan_n — backend engineer · senior golang · astana" },
   { kind: "cmd", t: "uptime" },
-  { kind: "out", t: "4y 11m of commercial experience · open to opportunities" },
+  { kind: "out", t: "5y 1m of commercial experience · open to opportunities" },
 ];
 
 function runCommand(input, setLines, t, setLang) {
@@ -34,7 +34,7 @@ function runCommand(input, setLines, t, setLang) {
     case "projects":
       push([
         { kind: "out", t: "1. hse forecasting platform — astana hub demo day '26 winner" },
-        { kind: "out", t: "2. lending platform — go + temporal, state registry integrations" },
+        { kind: "out", t: "2. lending platform + borrower portal — go + temporal + next.js, state registry integrations" },
         { kind: "out", t: "3. emoney payments core — fintech backend, kafka, mysql tuning" },
         { kind: "out", t: "4. sergek traffic analytics — clickhouse migration, antifraud" },
         { kind: "out", t: "5. dam anomaly detection — yolo + iot, mttd < 10 min" },

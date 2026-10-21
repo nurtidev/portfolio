@@ -23,7 +23,7 @@ window.I18N = {
     about: {
       eyebrow: "ПРОФИЛЬ",
       title: "Backend-разработчик с фокусом на распределённые системы.",
-      body: "Специализируюсь на проектировании микросервисных платформ в финтехе и smart-city. Участвовал в системах, которые обрабатывают сотни миллионов событий в сутки. Сейчас строю кредитную платформу в госсекторе: долгоживущие процессы, интеграции с государственными реестрами, требования регулятора. Имею опыт на стыке финтех, IoT и computer vision, с практическим применением AI-инструментов в ежедневной разработке.",
+      body: "Специализируюсь на проектировании микросервисных платформ в финтехе и smart-city. Участвовал в системах, которые обрабатывают сотни миллионов событий в сутки. Сейчас строю кредитную платформу в госсекторе и цифровой портал для заёмщиков: долгоживущие процессы, интеграции с государственными реестрами, требования регулятора, запуск и сопровождение в продакшне. Имею опыт на стыке финтех, IoT и computer vision, с практическим применением AI-инструментов в ежедневной разработке.",
       highlights: [
         { k: "Astana Hub Demo Day '26", v: "победа с AI-платформой HSE-прогнозирования" },
         { k: "R² = 0.796", v: "точность модели на промышленных данных" },
@@ -50,7 +50,7 @@ window.I18N = {
       items: [
         {
           period: "май 2026 — н.в.",
-          duration: "3 мес",
+          duration: "6 мес",
           company: "АО «Аграрная кредитная корпорация»",
           role: "Senior Golang Developer",
           sector: "FinTech / GovTech",
@@ -58,8 +58,10 @@ window.I18N = {
             "Backend кредитной платформы на Go: Clean Architecture и DDD, изолированные модули с ACL-контрактами между собой.",
             "Долгоживущие бизнес-процессы на Temporal — детерминированные воркфлоу с версионированием, чтобы деплой не ломал заявки в полёте.",
             "Интеграции с государственными реестрами и кредитным бюро через интеграционную шину: идемпотентность, таймауты, устойчивость к сбоям внешних каналов.",
+            "Цифровой портал корпорации, основной разработчик: публичный сайт, личный кабинет заёмщика и админка на Next.js, бэкенд портала на Go. Заявки с сайта с защитой персональных данных, контент на трёх языках (RU/KK/EN).",
+            "Перенос старого корпоративного сайта на новый портал: контент, документы и архив публикаций.",
             "Kafka + transactional outbox для событий между модулями; PostgreSQL со схемным разделением и версионируемыми миграциями.",
-            "Выкатка в Kubernetes по GitOps (ArgoCD); метрики бизнес-этапов в Prometheus.",
+            "Выкатка в Kubernetes по GitOps (ArgoCD); метрики бизнес-этапов в Prometheus. Платформа в продакшне с сентября 2026.",
           ],
         },
         {
@@ -134,15 +136,15 @@ window.I18N = {
         },
         {
           tag: "FinTech / GovTech",
-          name: "Кредитная платформа",
+          name: "Кредитная платформа и цифровой портал",
           where: "АО «Аграрная кредитная корпорация»",
-          desc: "Конвейер кредитования: заявка → проверки и скоринг → выдача → сопровождение. Долгоживущие процессы на Temporal, интеграции с госреестрами через шину.",
+          desc: "Конвейер кредитования: заявка → проверки и скоринг → выдача → сопровождение. Долгоживущие процессы на Temporal, интеграции с госреестрами через шину. Публичный сайт, личный кабинет заёмщика и админка портала.",
           metrics: [
             { v: "Temporal", l: "оркестрация процессов" },
             { v: "10+", l: "внешних интеграций" },
             { v: "GitOps", l: "выкатка в K8s" },
           ],
-          stack: ["Go", "Temporal", "PostgreSQL", "Kafka"],
+          stack: ["Go", "Temporal", "Kafka", "Next.js"],
         },
         {
           tag: "FinTech",
@@ -277,7 +279,7 @@ window.I18N = {
     about: {
       eyebrow: "PROFILE",
       title: "Backend engineer focused on distributed systems.",
-      body: "I design microservice platforms for fintech and smart-city domains and have shipped systems handling hundreds of millions of events per day. Right now I'm building a lending platform in the public sector: long-running processes, state-registry integrations, and regulatory constraints. I work at the intersection of fintech, IoT and computer vision, and apply AI tooling daily in my engineering workflow.",
+      body: "I design microservice platforms for fintech and smart-city domains and have shipped systems handling hundreds of millions of events per day. Right now I'm building a public-sector lending platform and its borrower-facing digital portal: long-running processes, state-registry integrations, regulatory constraints, and running it all in production. I work at the intersection of fintech, IoT and computer vision, and apply AI tooling daily in my engineering workflow.",
       highlights: [
         { k: "Astana Hub Demo Day '26", v: "1st place — AI HSE-forecasting platform" },
         { k: "R² = 0.796", v: "model accuracy on industrial data" },
@@ -304,7 +306,7 @@ window.I18N = {
       items: [
         {
           period: "May 2026 — present",
-          duration: "3m",
+          duration: "6m",
           company: "Agrarian Credit Corporation",
           role: "Senior Golang Developer",
           sector: "FinTech / GovTech",
@@ -312,8 +314,10 @@ window.I18N = {
             "Go backend for a lending platform: Clean Architecture and DDD, isolated modules talking to each other through ACL contracts.",
             "Long-running business processes on Temporal — deterministic, versioned workflows so deploys never break in-flight applications.",
             "Integrations with state registries and the credit bureau over an integration bus: idempotency, timeouts, resilience to upstream failures.",
+            "Lead developer of the corporation's digital portal: public website, borrower cabinet and admin panel in Next.js, portal backend in Go. Website applications with personal-data protection, content in three languages (RU/KK/EN).",
+            "Migrated the legacy corporate website to the new portal: content, documents and the publications archive.",
             "Kafka + transactional outbox for cross-module events; PostgreSQL with schema separation and versioned migrations.",
-            "Kubernetes delivery via GitOps (ArgoCD); business-stage metrics in Prometheus.",
+            "Kubernetes delivery via GitOps (ArgoCD); business-stage metrics in Prometheus. In production since September 2026.",
           ],
         },
         {
@@ -388,15 +392,15 @@ window.I18N = {
         },
         {
           tag: "FinTech / GovTech",
-          name: "Lending Platform",
+          name: "Lending Platform & Digital Portal",
           where: "Agrarian Credit Corporation",
-          desc: "Lending pipeline: application → checks and scoring → disbursement → servicing. Long-running processes on Temporal, state-registry integrations over a bus.",
+          desc: "Lending pipeline: application → checks and scoring → disbursement → servicing. Long-running processes on Temporal, state-registry integrations over a bus. Public website, borrower cabinet and the portal admin panel.",
           metrics: [
             { v: "Temporal", l: "process orchestration" },
             { v: "10+", l: "external integrations" },
             { v: "GitOps", l: "K8s delivery" },
           ],
-          stack: ["Go", "Temporal", "PostgreSQL", "Kafka"],
+          stack: ["Go", "Temporal", "Kafka", "Next.js"],
         },
         {
           tag: "FinTech",
